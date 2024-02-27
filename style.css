@@ -1,5 +1,175 @@
 
-Body{
-	background: rgba(40, 164, 254, 1.0);
-	color: rgba(255, 0, 158, 1.0);
+@font-face {
+    font-family: 'Webkinz';
+    src: url('fonts/webkinz_book_cyrillic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
+
+html {
+	height:100%;
+}
+
+body{
+	color: #FFFFFF;
+	font-family: 'Webkinz';
+	font-weight: 400;
+	background: linear-gradient(180deg, #36AAFF -16.21%, #173CA3 56.77%);
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+}
+
+.clouds {
+	width:100%;
+	height:120vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	position:relative;
+
+	text-align: center;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-size: 16px;
+
+}
+
+.cloud-1 {
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+
+.cloud-2 {
+	position:absolute;
+	top:50vh;
+	left:-10px;
+}
+
+.flex-row {
+	position:relative;
+	display:flex;
+	gap:30px;
+	padding-top: 20px;
+	padding-block: 20px;
+	overflow:visible;
+}
+
+.cloud-3 {
+	position:absolute;
+	bottom:20px;
+	right:0px;
+}
+
+.gem-background {
+	width:100vw;
+	height:100vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-image:url('images/rainbow-grain.png');
+	background-size: cover;
+	background-repeat: none;
+	background-attachment: fixed;
+}
+
+.gem-button {
+	width:100px;
+	height:auto;
+	transition-duration: 0.3s;
+}
+
+.gem-button:hover {
+	width:130px;
+}
+
+.gem-row {
+	display:flex;
+	flex-direction: row;
+	gap:30px;
+	opacity:0.5;
+	transition-duration: 0.3s;
+}
+
+.gem-row:hover {
+	opacity:1;
+}
+
+.glitter-gif {
+	position:absolute;
+	width:100px;
+	top:-20px;
+	right:100px;
+}
+
+.glitter-gif-2 {
+	position:absolute;
+	width:100px;
+	top:40px;
+	left:350px;
+}
+
+.header-image {
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	width:100vw;
+	height:100vh;
+}
+
+.info-section {
+	width:40vw;
+	padding:200px 100px;
+	font-weight: 400;
+}
+
+.info-text {
+	font-size:15px;
+}
+
+.library-section {
+	width:100%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:30px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-image:url('images/pixel-stars.png');
+}
+
+.map {
+	height:400px;
+	width:auto;
+}
+
+.mine-flex {
+	position:relative;
+	display:flex;
+	width:100%;
+	justify-content: space-between;
+	align-items: center;
+	margin-top:30px;
+	margin-bottom:30px;
+	width:45vw;
+}
+
+.nav-flex {
+	display:flex;
+	flex-direction: column;
+	gap:10px;
+	padding:20px;
+}
+
+.nav-links {
+	text-decoration: none;
+	color:inherit;
+	font-size:14px;
+	transition-duration: 0.3s;
+}
+
+.nav-links:hover {
+	font-size:16px;
+}
+
